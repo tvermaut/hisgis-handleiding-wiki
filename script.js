@@ -15,4 +15,14 @@ function GetWiki(pagina){
 window.onload = (event) => {
     var basis = GetWiki("Basis");
     document.getElementById("inhoud").innerHTML = document.getElementById("inhoud").innerHTML + basis;
+
+    var miid = GetWiki("Multipolygonen_in_iD");
+    document.getElementById("inhoud").innerHTML = document.getElementById("inhoud").innerHTML + miid;
+
+    Toc.init({$nav: $("#toc"), $scope: $("h1, h2, h3, h4, h5")});
+    $("body").scrollspy({target: "#toc"});
+    
+    $('[data-toggle="tooltip"]').tooltip()
+    $('[data-spy="scroll"]').each(function () {var $spy = $(this).scrollspy('refresh')})
+
   };
