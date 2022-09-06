@@ -9,6 +9,7 @@ function GetWiki(pagina){
     l = l.replaceAll(re_edit,'');
     l = l.replaceAll('href="/wiki','href="https://wiki.hisgis.nl/wiki');
     l = l.replaceAll('src="/images','src="https://wiki.hisgis.nl/images');
+    l = l.replaceAll('srcset="/images','src="https://wiki.hisgis.nl/images');
     return l
 }
 
