@@ -15,7 +15,8 @@ function GetWiki(pagina){
 window.onload = (event) => {
     var basis = GetWiki("Basis");
     console.log(basis);
-    document.getElementById("inhoud").innerHTML = document.getElementById("inhoud").innerHTML + basis;
+    var i = document.getElementById("inhoud");
+    i.innerHTML += basis;
 
     //var miid = GetWiki("Multipolygonen_in_iD");
     //document.getElementById("inhoud").innerHTML = document.getElementById("inhoud").innerHTML + miid;
