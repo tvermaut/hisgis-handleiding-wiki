@@ -9,6 +9,7 @@ window.onload = (event) => {
     var t = GetWiki("Basis");
     var doc = new DOMParser().parseFromString(t, "text/html");
     var l = doc.documentElement.innerHTML;
+    l.replace('href="/wiki','href="http://wiki.hisgis.nl/wiki');
     console.log(l);
     document.body.innerHTML = document.body.innerHTML + l;
   };
