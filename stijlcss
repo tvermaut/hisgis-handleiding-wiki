@@ -1,0 +1,12 @@
+#inhoud{
+    right:0px;
+    padding-right:1em;
+    width:70%;
+}
+
+#navigatie{
+    left:0px;
+    padding-left:1em;
+    padding-right:0.5em;
+    width:30%
+}
