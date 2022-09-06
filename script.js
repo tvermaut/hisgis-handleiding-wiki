@@ -18,8 +18,8 @@ window.onload = (event) => {
     var i = document.getElementById("inhoud");
     i.innerHTML += basis;
 
-    //var miid = GetWiki("Multipolygonen_in_iD");
-    //document.getElementById("inhoud").innerHTML = document.getElementById("inhoud").innerHTML + miid;
+    var miid = GetWiki("Multipolygonen_in_iD");
+    i.innerHTML += miid;
 
     Toc.init({$nav: $("#toc"), $scope: $("h1, h2, h3, h4, h5")});
     $("body").scrollspy({target: "#toc"});
