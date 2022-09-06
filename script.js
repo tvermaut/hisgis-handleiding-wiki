@@ -7,5 +7,6 @@ function GetWiki(pagina){
 
 window.onload = (event) => {
     var t = GetWiki("Basis");
+    console.log(t);
     document.body.innerHTML = document.body.innerHTML + t;
   };
