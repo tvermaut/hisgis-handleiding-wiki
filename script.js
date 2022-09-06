@@ -13,7 +13,6 @@ function GetWiki(pagina){
 }
 
 window.onload = (event) => {
-    var inhoud = document.getElementById("inhoud").innerHTML
     var basis = GetWiki("Basis");
-    inhoud = inhoud + basis;
+    document.getElementById("inhoud").innerHTML = document.getElementById("inhoud").innerHTML + basis;
   };
