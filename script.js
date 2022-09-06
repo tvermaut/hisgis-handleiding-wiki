@@ -8,7 +8,7 @@ function GetWiki(pagina){
 window.onload = (event) => {
     var t = GetWiki("Basis");
     var doc = new DOMParser().parseFromString(t, "text/html");
-    var l = doc.documentElement.textContent;
+    var l = doc.documentElement.innerHTML;
     console.log(l);
     document.body.innerHTML = document.body.innerHTML + l;
   };
