@@ -6,6 +6,6 @@ function GetWiki(pagina){
 }
 
 window.onload = (event) => {
-    var t = GetWiki("Basis").text;
+    var t = GetWiki("Basis");
     document.body.innerHTML = document.body.innerHTML + t;
   };
