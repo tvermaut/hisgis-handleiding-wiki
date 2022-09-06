@@ -1,5 +1,5 @@
 function GetWiki(pagina){
-    var Httpreq = new XMLHttpRequest(); // a new request
+    var Httpreq = new XMLHttpRequest();
     Httpreq.open("GET","https://wiki.hisgis.nl/api.php?action=parse&page="+pagina+"&prop=text&format=json",false);
     Httpreq.send(null);
     var r = JSON.parse(Httpreq.responseText)['parse']['text']['*'];
@@ -14,6 +14,7 @@ function GetWiki(pagina){
 
 window.onload = (event) => {
     var basis = GetWiki("Basis");
+    console.log(basis);
     document.getElementById("inhoud").innerHTML = document.getElementById("inhoud").innerHTML + basis;
 
     //var miid = GetWiki("Multipolygonen_in_iD");
