@@ -15,5 +15,5 @@ function GetWiki(pagina){
 window.onload = (event) => {
     var inhoud = document.getElementById("inhoud").innerHTML
     var basis = GetWiki("Basis");
-    inhoud += basis;
+    inhoud = inhoud + basis;
   };
