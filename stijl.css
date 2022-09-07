@@ -16,3 +16,7 @@ body{
     padding-right:0.5em;
     width:30%
 }
+
+kbd .keyboard-key{
+    color:black;
+}
