@@ -28,4 +28,14 @@ window.onload = (event) => {
     $('[data-toggle="tooltip"]').tooltip()
     //$('[data-spy="scroll"]').each(function () {var $spy = $(this).scrollspy('refresh')})
 
+    Toc.init({
+
+        // The element that the navigation will be created in
+        $nav: $('#toc'),
+      
+        // The element where the search for headings will be limited to
+        $scope: $(document.body)
+        
+      });
+
   };
