@@ -25,7 +25,7 @@ window.onload = (event) => {
     Toc.init({$nav: $("#toc"), $scope: $(document.body)});//$scope: $("h1, h2, h3, h4, h5")
     //$("body").scrollspy({target: "#toc"});
     
-    $('[data-toggle="tooltip"]').tooltip()
+    //$('[data-toggle="tooltip"]').tooltip()
     //$('[data-spy="scroll"]').each(function () {var $spy = $(this).scrollspy('refresh')})
 
   };
