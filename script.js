@@ -23,7 +23,7 @@ window.onload = (event) => {
     i.innerHTML += miid;
 
     Toc.init({$nav: $("#toc"), $scope: $("h1, h2, h3, h4, h5")});
-    $("body").scrollspy({target: "#toc"});
+    //$("body").scrollspy({target: "#toc"});
     
     $('[data-toggle="tooltip"]').tooltip()
     //$('[data-spy="scroll"]').each(function () {var $spy = $(this).scrollspy('refresh')})
