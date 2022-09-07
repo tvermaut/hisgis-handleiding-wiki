@@ -10,7 +10,7 @@ body{
 }
 
 #navigatie{
-    position: sticky;
+    position: fixed;
     left:0px;
     padding-left:1em;
     padding-right:0.5em;

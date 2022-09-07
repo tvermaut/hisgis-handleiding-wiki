@@ -26,6 +26,6 @@ window.onload = (event) => {
     $("body").scrollspy({target: "#toc"});
     
     $('[data-toggle="tooltip"]').tooltip()
-    $('[data-spy="scroll"]').each(function () {var $spy = $(this).scrollspy('refresh')})
+    //$('[data-spy="scroll"]').each(function () {var $spy = $(this).scrollspy('refresh')})
 
   };
