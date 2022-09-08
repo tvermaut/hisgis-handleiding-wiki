@@ -22,7 +22,7 @@ window.onload = (event) => {
     var miid = GetWiki("Multipolygonen_in_iD");
     i.innerHTML += miid;
 
-    Toc.init({$nav: $("#toc"), $scope: $(document.body)});//$scope: $("h1, h2, h3, h4, h5")
+    Toc.init({$nav: $("#toc"), $scope: $("h2, h3, h4, h5")});//$scope: $("h1, h2, h3, h4, h5")//document.body
     //$("body").scrollspy({target: "#toc"});
     
     //$('[data-toggle="tooltip"]').tooltip()
