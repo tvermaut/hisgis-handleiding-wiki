@@ -18,6 +18,9 @@ window.onload = (event) => {
     console.log(basis);
     var i = document.getElementById("inhoud");
     i.innerHTML += basis;
+    
+    var percelen = GetWiki("Percelen");
+    i.innerHTML += percelen;
 
     var miid = GetWiki("Multipolygonen_in_iD");
     i.innerHTML += miid;
