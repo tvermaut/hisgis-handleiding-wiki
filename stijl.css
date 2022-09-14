@@ -20,3 +20,12 @@ body{
 .keyboard-key{
     color:black;
 }
+
+.extraInfo{
+    margin:3em;
+    padding:1em;
+    border-radius:8px;
+    background-color: #fff0f0;
+    color:darkblue;
+    text-align: center;
+}
