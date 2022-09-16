@@ -30,25 +30,10 @@ body{
     text-align: center;
 }
 .PerceelBox { 
-  position: relative; 
-  top: 2em; 
-  left: -7em; 
-  right: -25em; 
-  bottom: 10em; 
-  height: auto; 
-  width: 129px; 
-  padding: 4px 0px 5px 3px; 
-  margin: 2px auto 0px auto; 
-  display: block; 
-  background: #FFFFFF; 
-  font-size: 14pt; 
+  padding: 2px 5px; 
+  background-color: #FFFFFF; 
   color: #008A8E; 
   font-family: Menlo, Consolas, Monaco, "Lucida Console", monospace; 
-  border-top: 2px; 
-  border-left: 2px; 
-  border-right: 2px; 
-  border-bottom: 2px; 
-  border-color: #000000; 
-  border-style: solid; 
+  border: 2px solid black;
   border-radius: 0px 15px 15px 15px; 
 }
