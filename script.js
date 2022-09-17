@@ -14,17 +14,12 @@ function GetWiki(pagina){
 }
 
 window.onload = (event) => {
-    var basis = GetWiki("Basis");
-    console.log(basis);
+    let paginas = ["Basis", "inhoud", "Percelen", "Multipolygonen_in_iD"];
     var i = document.getElementById("inhoud");
-    i.innerHTML += basis;
-    
-    var percelen = GetWiki("Percelen");
-    i.innerHTML += percelen;
-
-    var miid = GetWiki("Multipolygonen_in_iD");
-    i.innerHTML += miid;
-
+    for (let p in paginas){
+        i.innerHTML += GetWiki(p);
+        }
+        
     Toc.init({$nav: $("#toc"), $scope: $("h2, h3, h4, h5")});//$scope: $("h1, h2, h3, h4, h5")//document.body
     //$("body").scrollspy({target: "#toc"});
     
