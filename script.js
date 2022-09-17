@@ -14,7 +14,7 @@ function GetWiki(pagina){
 }
 
 window.onload = (event) => {
-    var paginas = ["Basis", "Percelen", "Multipolygonen_in_iD"];
+    var paginas = ["Basis", "Percelen", "Multipolygonen_in_iD", "Varianten"];
     var i = document.getElementById("inhoud");
     for (let p of paginas){
         i.innerHTML += GetWiki(p);
