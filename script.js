@@ -20,7 +20,7 @@ window.onload = (event) => {
         i.innerHTML += GetWiki(p);
         }
         
-    $("#inhoudsopgave").toc({content: "inhoud", headings: "h1,h2,h3,h4,h5,h6"});
+    $("#inhoudsopgave").toc({content: ".mw-parser-output", headings: "h1,h2,h3,h4,h5,h6"});
     //Toc.init({$nav: $("#toc"), $scope: $("h2, h3, h4, h5")});//$scope: $("h1, h2, h3, h4, h5")//document.body
     //$("body").scrollspy({target: "#toc"});
     
