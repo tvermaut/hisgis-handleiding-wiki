@@ -38,3 +38,13 @@ body{
   border: 1px solid darkgreen;
   border-radius: 0px 15px 15px 15px; 
 }
+
+.VeldBox {
+  padding: 1px 5px;
+  margin:1px;
+  background-color: rgba(0,0,255,0.2); 
+  color: rgba(0,0,255,1); 
+  font-family: Menlo, Consolas, Monaco, "Lucida Console", monospace; 
+  border: 1px solid rgba(0,0,255,1);
+  border-radius: 5px;
+}
