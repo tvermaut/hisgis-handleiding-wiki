@@ -32,10 +32,10 @@ body{
 .PerceelBox { 
   padding: 1px 5px;
   margin:1px;
-  background-color: #FFFFFF; 
-  color: #008A8E; 
+  background-color: rgba(0,138,142,0.1); 
+  color: rgba(0,138,142,1); 
   font-family: Menlo, Consolas, Monaco, "Lucida Console", monospace; 
-  border: 1px solid darkgreen;
+  border: 1px solid rgba(0,138,142,1);
   border-radius: 0px 15px 15px 15px; 
 }
 
