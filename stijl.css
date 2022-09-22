@@ -37,7 +37,10 @@ body{
   border: 1px solid rgba(0,138,142,1);
   border-radius: 0px 15px 15px 15px; 
 }
-
+.Voorbeeld {
+    color:#00aa00;"
+    title="voorbeeld">{{samp|{{{1}}}}};
+}
 .VeldBox {
   padding: 1px 5px;
   margin:1px;
