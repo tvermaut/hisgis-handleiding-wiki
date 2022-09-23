@@ -26,6 +26,7 @@ body{
     padding:1em;
     border-radius:8px;
     column-count: 2;
+    <p>Extra Information</p>
     background-color: rgba(238,130,238,0.5);
     color:darkblue;
 }
