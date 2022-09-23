@@ -25,6 +25,7 @@ body{
     margin:3em;
     padding:1em;
     border-radius:8px;
+    column-count: 2;
     background-color: rgba(238,130,238,0.5);
     color:darkblue;
 }
