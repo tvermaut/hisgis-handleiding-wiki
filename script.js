@@ -7,6 +7,8 @@ function GetWiki(pagina){
     var l = doc.documentElement.innerHTML;
     const re_edit = new RegExp(/<span class="mw-editsection">.*?\]<\/span><\/span>/, 'g');
     l = l.replaceAll(re_edit,'');
+    const re_edit_chevron = new RegExp(/<span class="ChevronDown".*?<\/span>/, 'g');
+    l = l.replaceAll(re_edit_chevron,'<i class="bi bi-chevron-down"></i>');
     l = l.replaceAll('href="/wiki','href="https://wiki.hisgis.nl/wiki');
     l = l.replaceAll('src="/images','src="https://wiki.hisgis.nl/images');
     l = l.replaceAll('srcset="/images','src="https://wiki.hisgis.nl/images');

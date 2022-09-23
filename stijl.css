@@ -41,7 +41,6 @@ body{
 
 .Voorbeeld {
     background-color: rgba(0,138,142,0.1); 
-    title="voorbeeld">{{samp|{{{1}}}}};
     font-family: Menlo, Consolas, Monaco, "Lucida Console", monospace;
 }
 
