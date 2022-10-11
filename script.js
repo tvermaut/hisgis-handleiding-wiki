@@ -4,6 +4,7 @@ function GetWiki(pagina){
     Httpreq.send(null);
     var r = JSON.parse(Httpreq.responseText)['parse']['text']['*'];
     var doc = new DOMParser().parseFromString(r, "text/html");
+    console.log(doc);
     //var l = doc.documentElement.innerHTML;
     const re_edit = new RegExp(/<span class="mw-editsection">.*?\]<\/span><\/span>/, 'g');
     doc.documentElement.innerHTML = doc.documentElement.innerHTML.replaceAll(re_edit,'');
