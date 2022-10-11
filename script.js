@@ -4,18 +4,18 @@ function GetWiki(pagina){
     Httpreq.send(null);
     var r = JSON.parse(Httpreq.responseText)['parse']['text']['*'];
     var doc = new DOMParser().parseFromString(r, "text/html");
-    var l = doc.documentElement.innerHTML;
+    //var l = doc.documentElement.innerHTML;
     const re_edit = new RegExp(/<span class="mw-editsection">.*?\]<\/span><\/span>/, 'g');
-    l = l.replaceAll(re_edit,'');
+    doc.documentElement.innerHTML = doc.documentElement.innerHTML.replaceAll(re_edit,'');
     const re_edit_chevron = new RegExp(/<span class="ChevronDown".*?<\/span>/, 'g');
     const re_edit_toc = new RegExp(/div id=.*?toc.*h2/, 'g');    
-    l = l.replaceAll(re_edit_chevron,'<span class="ChevronDown"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg></span>');
-    l = l.replaceAll(re_edit_toc,'h2');
-    l = l.replaceAll('href="/wiki','href="https://wiki.hisgis.nl/wiki');
-    l = l.replaceAll('src="/images','src="https://wiki.hisgis.nl/images');
-    l = l.replaceAll('srcset="/images','src="https://wiki.hisgis.nl/images');
-    console.log(l);
-    return l
+    doc.documentElement.innerHTML = doc.documentElement.innerHTML.replaceAll(re_edit_chevron,'<span class="ChevronDown"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/></svg></span>');
+    doc.documentElement.innerHTML = doc.documentElement.innerHTML.replaceAll(re_edit_toc,'h2');
+    doc.documentElement.innerHTML = doc.documentElement.innerHTML.replaceAll('href="/wiki','href="https://wiki.hisgis.nl/wiki');
+    doc.documentElement.innerHTML = doc.documentElement.innerHTML.replaceAll('src="/images','src="https://wiki.hisgis.nl/images');
+    doc.documentElement.innerHTML = doc.documentElement.innerHTML.replaceAll('srcset="/images','src="https://wiki.hisgis.nl/images');
+    console.log(doc.documentElement.innerHTML);
+    return doc.documentElement.innerHTML
 }
 
 window.onload = (event) => {
